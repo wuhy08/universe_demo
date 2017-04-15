@@ -2,7 +2,7 @@ import gym
 import universe  # register the universe environments
 
 env = gym.make('flashgames.NeonRaceLvl2-v0')
-env.configure(remotes=1，remotes='vnc://54.245.192.57:5900+15900')  # automatically creates a local docker container
+env.configure(remotes=1, remotes='vnc://54.245.192.57:5900+15900')  # automatically creates a local docker container
 observation_n = env.reset()
 
 while True:
